@@ -6,3 +6,6 @@ title: Edward's Blog
 author: Edward Atkinson
 
 theme: jekyll-theme-hacker
+
+sass:
+  style: compact

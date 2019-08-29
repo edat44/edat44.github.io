@@ -21,7 +21,12 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.tags %}
+  {% if page.categories %}
+    <small>categories: <em>{{ page.categories | join: "</em> - <em>" }}</em></small>
+    <br>
+  {% endif %}
+
+  {% if page.categories %}
     <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
   {% endif %}
 
