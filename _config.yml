@@ -1,0 +1,8 @@
+plugins:
+    - jekyll-feed
+
+title: Edward's Blog
+
+author: Edward Atkinson
+
+theme: jekyll-theme-hacker
