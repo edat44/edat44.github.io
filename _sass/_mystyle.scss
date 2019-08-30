@@ -12,3 +12,16 @@ $color-orange: #f66a0a;
 .orange {
   color: $color-orange;
 }
+
+header {
+  margin: 0 0 5px 0;
+  border-bottom: none;
+}
+
+.separator {
+  border-bottom: 1px dashed #b5e853;
+}
+
+header h1:before {
+  content: '';
+}
