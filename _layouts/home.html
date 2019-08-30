@@ -16,12 +16,14 @@ layout: default
       {%- for post in site.categories.ethics -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}: 
+        <span class="post-meta">
+          {{ post.date | date: date_format }}: 
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </span>
-        {{ post.excerpt }}
+        <br>
+        <h3>{{ post.excerpt | strip_html }}</h3>
         <span>...</span>
         <a class="post-link" href="{{ post.url | relative_url }}">More</a>
       </li>
