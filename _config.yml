@@ -7,5 +7,7 @@ author: Edward Atkinson
 
 theme: jekyll-theme-hacker
 
+future: true
+
 sass:
   style: compact
