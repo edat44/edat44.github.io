@@ -22,6 +22,11 @@ layout: default
 
   <div class="post-content e-content separator" itemprop="articleBody">
     {{ content }}
+    <br>
+
+    {% for footnote in page.footnotes %}
+      <small><sup>{{ forloop.index }}</sup>{{ footnote }}</small><br>
+    {% endfor %}
   </div>
 
   <small>Word Count: {{ content | number_of_words }}</small>
